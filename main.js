@@ -1,6 +1,13 @@
 // define some vars
 var cookies = 0;
-var cursors = 0;
+var famMembers = 0;
+
+// start the game
+
+function welcome(){
+    cookies = 5;
+    document.getElementById("cookies").innerHTML = cookies
+};
 
 // bake cookie button
 function cookieClick(number){
@@ -8,25 +15,25 @@ function cookieClick(number){
     document.getElementById("cookies").innerHTML = cookies
 };
 
-// buy cursors
-function buyCursor(){
-    var cursorCost = Math.floor(10 * Math.pow(1.1, cursors));
-    if(cookies >= cursorCost){
+// con family into helping your business
+function conFamily(){
+    var famCost = Math.floor(10 * Math.pow(1.1, famMembers));
+    if(cookies >= famCost){
         document.getElementById('insufficientCookies').innerHTML=''; // reset the message
 
-        cursors = cursors + 1;
-        cookies = cookies - cursorCost;
+        famMembers = famMembers + 1;
+        cookies = cookies - famCost;
         
-        document.getElementById('cursors').innerHTML = cursors;
+        document.getElementById('famMembers').innerHTML = famMembers;
         document.getElementById('cookies').innerHTML = cookies;
     }
     else {
         document.getElementById('insufficientCookies').innerHTML='Not enough cookies!'; // display error message
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1, cursors));
-    document.getElementById('cursorCost').innerHTML = nextCost;
+    var nextCost = Math.floor(10 * Math.pow(1.1, famMembers));
+    document.getElementById('famCost').innerHTML = nextCost;
 };
 
 window.setInterval(function(){
-    cookieClick(cursors);
+    cookieClick(famMembers);
     }, 1000);
