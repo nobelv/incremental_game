@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="interface.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <div class="game-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="game-header mdl-layout__header mdl-color--blue-grey-900 mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Welcome to the incremental game</span>
+                <span class="mdl-layout-title">Cookie Clicker Copy</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable"></div>
             </div>
@@ -31,9 +32,9 @@
         <!-- Top right corner w/ logo -->
         <div class="game-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
             <header class="game-drawer-header">
-                <img src="images/user.jpg" class="game-logo">
-                <span>Incremental Game</span>
+                <img src="images/stroopwafel.svg" class="game-logo">
                 <div class="mdl-layout-spacer"></div>
+                <span>Koekebakkers Inc. $$$</span>
             </header>
 
             <!-- Navigation -->
@@ -57,7 +58,7 @@
                             <p>This is mostly just a proof of concept.</p>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
                                 onclick="welcome();">
-                                Begin baking!
+                                Buy a pack of stroopwafels to taste!
                             </button>
                         </div>
                     </div>
@@ -69,7 +70,7 @@
                         <div 
                         class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col cardBG imgBG">
                         <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Cookie tracker</h2>
+                            <h2 class="mdl-card__title-text">Cookie Count</h2>
                         </div>
                             <div class="mdl-card__supporting-text">
                                 <p>You currently have this many cookies:</p>
@@ -80,15 +81,13 @@
                         <div 
                         class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col cardBG imgBG">
                         <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Family helper tracker</h2>
+                            <h2 class="mdl-card__title-text">Family Helpers</h2>
                         </div>
                             <div class="mdl-card__supporting-text">
                                 <p>You currently swindled this many family members into your business:</p>
                                 <span id="famMembers"></span>
                             </div>
                         </div>
-
-
                 </div>
              </div>
 
@@ -100,7 +99,7 @@
                             <h2 class="mdl-card__title-text">Homemade Cookies</h2>
                         </div>
                             <div class="mdl-card__supporting-text">
-                                <p>Every adventure starts with manual labor.</p>
+                                <p>Every adventure starts with (lots of) manual labor.</p>
                                 <button 
                                     class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
                                     onclick=cookieClick(1)>
@@ -124,14 +123,11 @@
                                 <span id="insufficientCookies"></span>
                             </div>
                         </div>
-
-
                 </div>
              </div>
 
 
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script type="text/javascript" src="page_logic.js"></script>
     <script type="text/javascript" src="main.js"></script>
 
 </body>

@@ -5,8 +5,10 @@ var famMembers = 0;
 // start the game
 
 function welcome(){
-    cookies = 5;
+    cookies = 10;
     document.getElementById("cookies").innerHTML = cookies
+    
+	$("#welcomePre").hide();
 };
 
 // bake cookie button
